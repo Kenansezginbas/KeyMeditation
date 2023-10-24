@@ -25,8 +25,7 @@ class SignInVC: UIViewController {
         configureButtons()
         configureTitle()
     }
-    
- 
+  
 }
 
 #Preview {
@@ -69,6 +68,8 @@ extension SignInVC  {
     final func configureButtons() {
         view.addSubview(signInButton)
         view.addSubview(goSignUpButton)
+        signInButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(signInButtonTapped)))
+        goSignUpButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(goSignUpButtonTapped)))
         
         NSLayoutConstraint.activate([
             signInButton.topAnchor.constraint(equalTo: password.bottomAnchor, constant: 10),
@@ -81,5 +82,14 @@ extension SignInVC  {
             goSignUpButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
             goSignUpButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
         ])
+    }
+    @objc func signInButtonTapped() {
+        let wellcomeVC = WellcomeVC()
+        wellcomeVC.modalPresentationStyle = .fullScreen
+        present(wellcomeVC, animated: true)
+    }
+    
+    @objc func goSignUpButtonTapped() {
+        
     }
 }

@@ -20,6 +20,7 @@
 		149EABA92AE5A8A500FA5F3A /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149EABA82AE5A8A500FA5F3A /* Color+Extensions.swift */; };
 		14EE20532AE86297008C65B6 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EE20522AE86297008C65B6 /* SignInVC.swift */; };
 		14EE20582AE862E4008C65B6 /* MdTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EE20572AE862E4008C65B6 /* MdTextField.swift */; };
+		14EE205B2AE86E78008C65B6 /* WellcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EE205A2AE86E78008C65B6 /* WellcomeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		149EABA82AE5A8A500FA5F3A /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		14EE20522AE86297008C65B6 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		14EE20572AE862E4008C65B6 /* MdTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MdTextField.swift; sourceTree = "<group>"; };
+		14EE205A2AE86E78008C65B6 /* WellcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellcomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 		149EAB922AE59AD400FA5F3A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				14EE20592AE86E66008C65B6 /* Wellcome */,
 				14EE20502AE8627E008C65B6 /* Auth */,
 				149EAB972AE59BFD00FA5F3A /* Splash */,
 			);
@@ -216,6 +219,14 @@
 			path = Input;
 			sourceTree = "<group>";
 		};
+		14EE20592AE86E66008C65B6 /* Wellcome */ = {
+			isa = PBXGroup;
+			children = (
+				14EE205A2AE86E78008C65B6 /* WellcomeVC.swift */,
+			);
+			path = Wellcome;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -294,6 +305,7 @@
 				149EAB7C2AE5997F00FA5F3A /* AppDelegate.swift in Sources */,
 				149EAB9C2AE59C4900FA5F3A /* MdImageView.swift in Sources */,
 				149EAB9F2AE5A2C700FA5F3A /* MdStackView.swift in Sources */,
+				14EE205B2AE86E78008C65B6 /* WellcomeVC.swift in Sources */,
 				149EABA52AE5A67400FA5F3A /* MdButton.swift in Sources */,
 				149EAB7E2AE5997F00FA5F3A /* SceneDelegate.swift in Sources */,
 				14EE20582AE862E4008C65B6 /* MdTextField.swift in Sources */,
